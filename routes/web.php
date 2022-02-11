@@ -46,6 +46,11 @@ $posts = [
 			'title' => 'Intro to PHP',
 			'content' => 'This is a short intro to PHP',
 			'is_new' => false
+		],
+		3 => [
+			'title' => 'Intro to Java',
+			'content' => 'This is a short intro to Java',
+			'is_new' => false
 		]
 	];
 
