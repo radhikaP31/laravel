@@ -60,6 +60,33 @@ Route::get('/loops', function() use ($posts){
 	return view('posts.loops',['posts' => $posts]);
 });
 
+//Responses Codes, Headers and Cookies
+Route::get('/fun/responses', function () use($posts) {
+    return response($posts, 201)
+    ->header('Content-Type', 'application/json')
+    ->cookie('MY_COOKIE', 'Radhika Panchasara', 100);
+});
+
+//Redirect Responses
+Route::get('/fun/redirect', function () {
+    return redirect('/content');
+});
+
+//Redirect Back
+Route::get('/fun/back', function(){
+	return back();
+});
+
+//Redirect to route
+Route::get('/fun/named-route', function(){
+	return redirect()->route('home.content');
+});
+
+//Redirect away
+Route::get('/fun/away', function(){
+	return redirect()->away('https://google.com');
+});
+
 //Route with parameter codition
 //http://127.0.0.1:8000/post/1 
 //if you pass any other value then it will give 404 error

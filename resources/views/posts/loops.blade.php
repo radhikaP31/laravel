@@ -16,6 +16,7 @@
 
 
 	<h2> Forelse loop with empty, break, continue example </h2>
+	{{-- @each('posts.partials.post', $posts, 'post') --}}
 	@forelse($posts as $key => $loop)
 		{{-- @break($key == 2) --}}	{{-- break at second element and display all previous element--}}
 		@continue($key == 1){{-- skip first element and display other all element--}}

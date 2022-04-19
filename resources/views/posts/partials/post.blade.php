@@ -6,3 +6,4 @@
 	@endphp
 	<div>After my value change. I am done</div>
 @endwhile
+{{-- <div>{{$key}}.{{$posts[$key]['title']}}</div> --}}
