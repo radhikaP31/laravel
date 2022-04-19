@@ -47,3 +47,5 @@
 	{{-- @include('posts.partials.post',[$data])  -- here example for if you want to pass any data to file --}}
 	
 @endsection
+
+
